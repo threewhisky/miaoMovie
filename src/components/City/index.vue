@@ -157,6 +157,6 @@ export default {
 .city_body .city_sort h2{ padding-left: 15px; line-height: 30px; font-size: 14px; background:#F0F0F0; font-weight: normal;}
 .city_body .city_sort ul{ padding-left: 10px; margin-top: 10px;}
 .city_body .city_sort ul li{ line-height: 30px; line-height: 30px;}
-.city_body .city_index{ width:20px; display: flex; flex-direction:column; justify-content:center; text-align: center; border-left:1px #e6e6e6 solid;}
+.city_body .city_index{ width:40px; display: flex; flex-direction:column; justify-content:center; text-align: center; border-left:1px #e6e6e6 solid;}
 
 </style>
