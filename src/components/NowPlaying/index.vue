@@ -4,7 +4,7 @@
         <Scroller v-else :handleToScroll="handleToScroll" :handleToTouchEnd="handleToTouchEnd">
             <ul>
                 <li class="pull_down">{{ pullDownMsg }}</li>
-                <li v-for="item in movieList" :key="item.id" @tap="handleToDetail">
+                <li v-for="item in movieList" :key="item.id" @tap="handleToDetail(item.id)">
                     <div class="pic_show">
                         <img :src="item.img | setWH('128.180')"></div>
                     <div class="info_list">
@@ -58,8 +58,8 @@ export default {
         })
     },
     methods: {
-        handleToDetail(){
-            console.log('tap');
+        handleToDetail(movieId){
+            this.$router.push('/movie/detail/' + movieId);
         },
 
         //下拉刷新功能
