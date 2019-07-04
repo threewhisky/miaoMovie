@@ -34,7 +34,8 @@ export default {
     },
     watch: {
         message(newVal){
-            this.axios.get('/api/searchList?cityId=10&kw=' + newVal).then((res) => {
+            var cityId = this.$store.state.city.id;
+            this.axios.get('/api/searchList?cityId=' + cityId + '&kw=' + newVal).then((res) => {
                 var msg = res.data.msg;
                 var movies = res.data.data.movies;
                 if(msg && movies){
