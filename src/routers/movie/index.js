@@ -15,6 +15,16 @@ export default {
       component: () => import('@/components/ComingSoon')
     },
     {
+      path: 'detail/:movieId',
+      //让页面整个载入detail页面，如果不写components，则会保留 喵电影 的标题
+      components: {
+        detail: () => import('@/views/Movie/detail')
+      },
+      props: {
+        detail: true
+      }
+    },
+    {
       path: 'search',
       component: () => import('@/components/Search')
     },
