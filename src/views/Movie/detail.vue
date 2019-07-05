@@ -23,11 +23,13 @@
 				</div>
 			</div>
             <div class="detail_intro">
+                <h2>影片简介</h2>
 				<p>
                     {{ detailMovie.dra }}
                 </p>
 			</div>
             <div class="detail_player swiper-container" ref="detail_player">
+                <h2>影片部分剧照</h2>
 				<ul class="swiper-wrapper">
 					<li v-for="(item,index) in detailMovie.photos" :key="index" class="swiper-slide">
 						<div>

@@ -1,4 +1,6 @@
 module.exports = {
+    publicPath: '/miaoMovie',
+    productionSourceMap: false,
     devServer: {
         proxy: {
             '/api': {
